@@ -14,7 +14,7 @@ def SortSides(Prxy):
     sides.append(((0,1,2,3), (Prxy[0,2] +  Prxy[1,2] +  Prxy[2,2] +  Prxy[3,2]) / 4))
     sides.append(((2,6,5,1), (Prxy[2,2] +  Prxy[6,2] +  Prxy[5,2] +  Prxy[1,2]) / 4))
     
-    sides.sort(key=lambda x: x[1])
+    sides.sort(key=lambda x: x[1], reverse=True)
 
     return sides
 
