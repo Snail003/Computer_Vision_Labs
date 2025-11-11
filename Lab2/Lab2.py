@@ -78,3 +78,5 @@ img_rgb = cv2.cvtColor(img_raw, cv2.COLOR_BGR2RGB)
 step1 = filter_by_hsv(img_rgb, sv_tol=210)
 step2 = segment_kmeans(step1, clusters=2)
 count_buildings, view1, view2 = detect_regions(step2, img_rgb)
+
+print("Detected structures:", count_buildings)
