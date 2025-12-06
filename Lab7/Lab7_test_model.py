@@ -122,6 +122,5 @@ def main():
     print(f"FP (different, but predicted same): {fp}")
     print(f"FN (same, but predicted diff.):     {fn}")
 
-
 if __name__ == "__main__":
     main()

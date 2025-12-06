@@ -100,5 +100,6 @@ def train():
     siamese.save(MODEL_PATH)
     embedding.save(EMB_MODEL_PATH)
 
+
 if __name__ == "__main__":
     train()
